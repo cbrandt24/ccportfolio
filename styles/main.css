@@ -21,6 +21,65 @@
     background-image: url("../img/bridge/full-width.jpg");
     width: 100%; }
 
+#sidebar-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  width: 0px;
+  height: 100%;
+  padding-top: 10px;
+  font-family: "Roboto", serif;
+  color: white;
+  background-color: black;
+  z-index: 2;
+  overflow: hidden;
+  transition: all 0.5s ease; }
+  #sidebar-wrapper h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin: 4px;
+    padding: 0px; }
+  #sidebar-wrapper a {
+    color: white;
+    font-size: 24px;
+    margin-left: 10px; }
+  #sidebar-wrapper.open {
+    width: 320px; }
+  #sidebar-wrapper .sidebar-links {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+
+#close-btn {
+  margin-left: 30px;
+  margin-top: 10px;
+  align-self: flex-start;
+  color: white;
+  cursor: pointer; }
+  #close-btn:hover {
+    opacity: .5; }
+  #close-btn img {
+    height: 30px;
+    width: 30px; }
+
+#hamburger {
+  position: fixed;
+  height: 34px;
+  width: 40px;
+  left: 30px;
+  top: 20px;
+  border-radius: 4px;
+  background-color: black;
+  z-index: 1; }
+  #hamburger:hover {
+    background-color: #00CFFF; }
+  #hamburger img {
+    height: 30px;
+    width: 30px; }
+
 #intro h1, #intro h5 {
   text-shadow: rgba(0, 0, 0, 0.25) 0px 5px 5px; }
 #intro h5 {
